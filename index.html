@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Currency Converter</h1>
+        <div class="amount-box">
+            <p>Enter the amount</p>
+            <input type="number" id="input-amount">
+        </div>
+        <div class="convertisseur-box">
+            <div class="option-from-currency">
+                <p>From</p>
+                <select  id="option1">
+                 <option value="DzOption">DZ</option>
+                 <option  value="FrOption">FR</option>
+                 <option value="USDOption">USD</option>
+                </select>
+            </div>
+            <div class="to-from-currency">
+                <p class="to">To</p>
+                <select  id="option2">
+                 <option  value="DzOption2">DZ</option>
+                 <option  value="FrOption2">FR</option>
+                 <option  value="USDOption2">USD</option>
+                </select>
+            </div>
+        </div>
+        <div class="resultat-container">
+    
+           </div>
+        <button onclick="CurencyConvertisseur()" id="btn" type="button">Get Exechange Rate</button>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
